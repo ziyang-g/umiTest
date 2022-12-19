@@ -1,0 +1,65 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe E:\node\node_global\node_modules\yarn\bin\yarn.js
+
+PATH: 
+  C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;E:\git\Git\cmd;E:\bandizip\;C:\Program Files\nodejs\;E:\vscode\Microsoft VS Code\bin;E:\node\node_global;C:\Users\13393\AppData\Roaming\npm
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  16.18.1
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: https://registry.npmmirror.com/@ant-design%2ficons: tunneling socket could not be established, cause=Client network socket disconnected before secure TLS connection was established
+      at ClientRequest.onError (E:\node\node_global\node_modules\yarn\lib\cli.js:152376:17)
+      at Object.onceWrapper (node:events:628:26)
+      at ClientRequest.emit (node:events:513:28)
+      at TLSSocket.socketErrorListener (node:_http_client:494:9)
+      at TLSSocket.emit (node:events:513:28)
+      at emitErrorNT (node:internal/streams/destroy:157:8)
+      at emitErrorCloseNT (node:internal/streams/destroy:122:3)
+      at processTicksAndRejections (node:internal/process/task_queues:83:21)
+
+npm manifest: 
+  {
+    "private": true,
+    "author": "",
+    "scripts": {
+      "dev": "max dev",
+      "build": "max build",
+      "format": "prettier --cache --write .",
+      "prepare": "husky install",
+      "postinstall": "max setup",
+      "setup": "max setup",
+      "start": "npm run dev"
+    },
+    "dependencies": {
+      "@ant-design/icons": "^4.7.0",
+      "@ant-design/pro-components": "^2.0.1",
+      "@umijs/max": "^4.0.28",
+      "antd": "^4.24.0",
+      "echarts": "^5.4.0",
+      "lodash": "^4.17.21"
+    },
+    "devDependencies": {
+      "@types/lodash": "^4.14.187",
+      "@types/react": "^18.0.0",
+      "@types/react-dom": "^18.0.0",
+      "husky": "^8.0.1",
+      "lint-staged": "^13.0.3",
+      "prettier": "^2.7.1",
+      "prettier-plugin-organize-imports": "^2",
+      "prettier-plugin-packagejson": "^2",
+      "typescript": "^4.1.2"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
