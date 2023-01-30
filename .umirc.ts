@@ -54,6 +54,11 @@ export default defineConfig({
       path: '/test3',
       component: './test3',
     },
+    {
+      name: 'editable',
+      path: '/editable',
+      component: './editable',
+    },
   ],
   npmClient: 'cnpm',
 });
