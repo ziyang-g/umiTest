@@ -66,7 +66,12 @@ const Overview = ({ data }: { data: any }) => {
             type: 'bar',
             stack: 'total',
             label: {
-              show: true,
+              normal: {
+                show: false,
+                formatter: '{d}%\n{b}',
+                position: 'center',
+                lineHight: 30,
+              },
             },
             emphasis: {
               focus: 'series',
