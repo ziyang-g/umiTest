@@ -55,9 +55,9 @@ export default defineConfig({
       component: './test3',
     },
     {
-      name: 'editable',
-      path: '/editable',
-      component: './editable',
+      name: '首页展示',
+      path: '/overview',
+      component: './overview',
     },
   ],
   npmClient: 'cnpm',

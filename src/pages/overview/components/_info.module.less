@@ -1,0 +1,54 @@
+.items {
+  display: flex;
+  /* 换行 */
+  // flex-wrap: wrap;
+  /* 均匀排列每个元素，首个元素放置于起点，末尾元素放置于终点 */
+  // justify-content: space-between;
+  flex-direction: column;
+  width: 200px;
+  margin-left: 30px;
+  :global {
+    span.ant-badge-status-dot {
+      width: 35px;
+      height: 8px;
+      border-radius: 4px 4px 4px 4px;
+      margin-right: 3px;
+    }
+  }
+}
+.card {
+  display: flex;
+  flex-direction: row;
+  overflow: auto;
+  justify-content: space-between;
+
+  width: 576px;
+  height: 124px;
+  background: linear-gradient(180deg, #f7f8f9 0%, #e6eaef 100%);
+  box-shadow: inset 0px 0px 28px 0px #ffffff;
+  border-radius: 10px 10px 10px 10px;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 10px 0 10px;
+}
+.card_main {
+  width: 28px;
+  height: 22px;
+  margin-bottom: 5px;
+  font-size: 14px;
+  font-family: PingFang SC-Regular, PingFang SC;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.45);
+  line-height: 22px;
+  margin-left: 16px;
+}
+.card_main_count {
+  width: 72px;
+  height: 40px;
+  font-size: 25px;
+  font-family: PingFang SC-Bold, PingFang SC;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.85);
+  line-height: 40px;
+  margin-left: 16px;
+}
