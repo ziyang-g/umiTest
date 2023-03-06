@@ -22,7 +22,7 @@ const ErrorList = () => {
     <>
       <div className={styles.error_header}>
         <div className={styles.error_title}>
-          <span>电池故障分析</span>
+          <span>{showList ? '叉车故障分析' : '电池故障分析'}</span>
           <Button
             icon={<SwapOutlined style={{ fontSize: 20 }} />}
             style={{ marginLeft: 10 }}

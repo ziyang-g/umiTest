@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Switch, message, Statistic } from 'antd';
+import styles from './auto_refresh.module.less'
 
 const AutoRefresh: React.FC<{ getdata: () => void }> = (props) => {
   const [nextTime, setNextTime] = useState<number>();
@@ -25,7 +26,7 @@ const AutoRefresh: React.FC<{ getdata: () => void }> = (props) => {
   };
 
   return (
-    <div style={{ display: 'flex', alignItems: 'center' }}>
+    <div style={{ display: 'flex', alignItems: 'center' }} className={styles.auto_button}>
       {show ? (
         <Countdown value={nextTime} format="mm:ss" onFinish={countdownFinish} />
       ) : null}

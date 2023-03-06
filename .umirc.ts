@@ -59,6 +59,11 @@ export default defineConfig({
       path: '/overview',
       component: './overview',
     },
+    {
+      name: '综合列表',
+      path: '/complex_list',
+      component: './complex_list',
+    },
   ],
   npmClient: 'cnpm',
 });
