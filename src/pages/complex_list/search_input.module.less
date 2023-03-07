@@ -1,0 +1,29 @@
+.search {
+  z-index: 999;
+  :global {
+    .ant-input-search
+      > .ant-input-group
+      > .ant-input-group-addon:last-child
+      .ant-input-search-button {
+      width: 58px;
+      height: 44px;
+      background: #d7000f;
+      border-radius: 0px 22px 22px 0px;
+      border: 1px solid #d7000f;
+      color: #ffffff;
+      font-size: 20px;
+    }
+    .ant-input-group > .ant-input:first-child {
+      width: 176px;
+      height: 44px;
+      background: #ffffff;
+      border-radius: 22px 0px 0px 22px;
+      border: 1px solid #d9d9d9;
+    }
+    .ant-input-group {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+  }
+}

@@ -1,3 +1,4 @@
+import { PageContainer } from '@ant-design/pro-components';
 import Bar from './components/bar';
 import Battary from './components/battary';
 import ErrorList from './components/error_list';
@@ -9,20 +10,22 @@ import styles from './index.module.less';
 
 const OverView = () => {
   return (
-    <div className={styles.box}>
-      <div className={styles.box_child}>
-        <Forklift />
-        <Battary />
-        <MapList />
-        <AbnormalRemind />
+    <PageContainer title={false} style={{ background: '#DEE3E7' }}>
+      <div className={styles.box}>
+        <div className={styles.box_child}>
+          <Forklift />
+          <Battary />
+          <MapList />
+          <AbnormalRemind />
+        </div>
+        <div className={styles.box_child}>
+          <Bar />
+          <Bar />
+          <ErrorList />
+          <MaintainRemind />
+        </div>
       </div>
-      <div className={styles.box_child}>
-        <Bar />
-        <Bar />
-        <ErrorList />
-        <MaintainRemind />
-      </div>
-    </div>
+    </PageContainer>
   );
 };
 
